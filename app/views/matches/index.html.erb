@@ -16,10 +16,10 @@
       <th>Player 2</th>
       <th>P1 Result</th>
       <th>P2 Result</th>
-      <th>View</th>
+      <%# <th>View</th> %>
       <% if current_user && current_user.admin %>
-        <th>Edit</th>
-        <th>Details</th>
+        <%# <th>Edit</th> %>
+        <%# <th>Details</th> %>
       <% end %>
 
     </tr>
@@ -35,10 +35,10 @@
           <td> <%= Profile.find(match.player2).full_name %> </td>
           <td> <%= match.p1_result%> </td>
           <td> <%= match.p2_result%> </td>
-          <td> <%= link_to "View", match_path(match), class: "btn btn-sm btn-outline-primary" %> </td>
+          <%# <td> <%= link_to "View", match_path(match), class: "btn btn-sm btn-outline-primary" %> </td>
           <% if current_user && current_user.admin %>
-          <td> <%= link_to "Edit", edit_match_path(match), class: "btn btn-sm btn-outline-warning" %> </td>
-          <td> <%= link_to "Delete", match_path(match), method: :delete, class: "btn btn-sm btn-outline-danger" %> </td>
+          <%# <td> <%= link_to "Edit", edit_match_path(match), class: "btn btn-sm btn-outline-warning" %> </td>
+          <%# <td> <%= link_to "Delete", match_path(match), method: :delete, class: "btn btn-sm btn-outline-danger" %> </td>
           <% end %>
     </tr>
   <% end %>

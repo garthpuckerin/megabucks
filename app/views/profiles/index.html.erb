@@ -23,8 +23,8 @@
           <td> <%= profile.location.name %> </td>
           <td> <%= link_to "View", profile_path(profile), class: "btn btn-sm btn-outline-primary" %> </td>
           <% if current_user && current_user.admin %>
-          <td> <%= link_to "Edit", edit_profile_path(profile), class: "btn btn-outline-warning" %></td>
-          <td> <%= link_to "Delete", profile_path(profile), method: :delete, class: "btn btn-outline-danger" %></td>
+          <td> <%= link_to "Edit", edit_profile_path(profile), class: "btn btn-sm btn-outline-warning" %></td>
+          <td> <%= link_to "Delete", profile_path(profile), method: :delete, class: "btn btn-sm btn-outline-danger" %></td>
           <% end %>
     </tr>
   <% end %>
