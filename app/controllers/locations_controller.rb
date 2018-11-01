@@ -1,10 +1,14 @@
 class LocationsController < ApplicationController
+
+  before_action :set_location, only: [:show, :edit, :update, :destroy]
+  
   def index
     @locations = Location.all
   end
 
   def show
     @location
+    @matches = Match.where(location_id: params[:id])
   end
 
   def edit
@@ -28,7 +32,7 @@ class LocationsController < ApplicationController
     # respond_to do |format|
     #   format.html
     #   format.js
-    end
+    # end
 
     redirect_to locations_path
   end
@@ -53,4 +57,5 @@ class LocationsController < ApplicationController
   def set_location
     @location = Location.find(params[:id])
   end
+
 end

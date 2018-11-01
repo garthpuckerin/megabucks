@@ -1,10 +1,27 @@
 class ProfilesController < ApplicationController
+  
+  before_action :set_profile, only: [:show, :edit, :update, :destroy]
+  # before_action :set_location, only: [:show, :edit, :update, :destroy]
+  # before_action :set_matches, only: [:show, :edit, :update, :destroy]
+
   def index
     @profiles = Profile.all
   end
 
   def show
-    @profile
+    # @profile
+    @matches = Match.where(player1: params[:id]).or(Match.where(player2: params[:id]))
+    @p1wins = Match.where(player1: params[:id], p1_result: "Won")
+    @p2wins = Match.where(player2: params[:id], p2_result: "Won")
+    @totalWins = @p1wins.count + @p2wins.count
+    @p1losses = Match.where(player1: params[:id], p1_result: "Loss")
+    @p2losses = Match.where(player2: params[:id], p2_result: "Loss")
+    @totalLosses = @p1losses.count + @p2losses.count
+
+    @totalWinsPoints = @totalWins * 10
+    @totalLossesPoints = @totalLosses * 5
+    @totalPoints = (@totalWins * 10) + (@totalLosses * 5)
+
   end
 
   def new
@@ -50,4 +67,12 @@ class ProfilesController < ApplicationController
   def set_profile
     @profile = Profile.find(params[:id])
   end
+
+  # def set_location
+  #   @location = Location.find(params[:id])
+  # end
+
+  # def set_matches
+  #   @matches = Match.where()
+  # end
 end

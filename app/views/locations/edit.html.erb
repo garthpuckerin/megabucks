@@ -1,2 +1,17 @@
 <h1>Locations#edit</h1>
 <p>Find me in app/views/locations/edit.html.erb</p>
+
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body form-group">
+        <%= bootstrap_form_with(model: @location) do |form| %>
+          <%= form.text_field :name, label: "Name:" %>
+          <%= form.text_field :address, label: "Address:" %>
+          <%= form.text_field :phone, label: "Phone:" %>
+          <%= form.select :match_day, ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], include_blank: true, label: "Match Day:" %>
+          <%= link_to "Back", :back, class: "btn btn-outline-secondary" %>
+          <%= form.submit class: "btn btn-outline-success", value: "Update"%>
+        <% end %>
+      </div>
+    </div>
+  </div>

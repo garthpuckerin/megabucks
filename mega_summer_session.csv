@@ -1,0 +1,114 @@
+﻿match_date,location_id,match_format,match_type,player1,player2,p1_result,p2_result
+7/2/18,4,8-BALL,Current Match,1,15,Won,Loss
+7/2/18,4,8-BALL,Current Match,19,11,Won,Loss
+7/9/18,4,9-BALL,Current Match,8,19,Won,Lost On Hill
+7/16/18,4,9-BALL,Current Match,11,17,Won,Loss
+7/9/18,4,8-BALL,Current Match,19,6,Won,Loss
+7/9/18,4,8-BALL,Make Up Match,19,22,Won,Loss
+7/9/18,4,9-BALL,Current Match,6,15,Won,Loss
+7/9/18,4,8-BALL,Make Up Match,7,17,Won,Loss
+7/11/18,1,9-BALL,Current Match,5,23,Won,Loss
+7/12/18,1,8-BALL,Make Up Match,24,19,Won,Loss
+7/13/18,1,8-BALL,Make Up Match,16,19,Loss,Won
+7/6/18,1,8-BALL,Make Up Match,16,19,Loss,Won
+7/13/18,1,9-BALL,Make Up Match,24,19,Won,Loss
+7/16/18,4,10-BALL,Current Match,8,19,Won,Loss
+7/16/18,4,8-BALL,Make Up Match,8,19,Won,Loss
+7/16/18,4,10-BALL,Current Match,11,22,Won,Loss
+7/16/18,4,10-BALL,Current Match,15,25,Won,Loss
+7/2/18,4,9-BALL,Make Up Match,25,19,Loss,Won
+7/16/18,4,10-BALL,Current Match,6,19,Won,Loss
+7/18/18,1,8-BALL,Make Up Match,24,23,Won,Loss
+7/18/18,1,8-BALL,Make Up Match,4,13,Won,Loss
+7/18/18,1,8-BALL,Make Up Match,21,3,Won,Loss
+7/18/18,1,8-BALL,Make Up Match,3,21,Loss,Won
+7/18/18,1,10-BALL,Current Match,5,13,Won,Loss
+7/18/18,1,10-BALL,Current Match,4,23,Won,Loss
+7/18/18,1,10-BALL,Current Match,20,16,Won,Loss
+7/18/18,1,9-BALL,Make Up Match,4,16,Loss,Won
+7/18/18,1,8-BALL,Make Up Match,20,5,Loss,Won
+7/18/18,1,8-BALL,Current Match,3,24,Loss,Won
+7/19/18,1,10-BALL,Current Match,24,3,Won,Loss
+7/23/18,4,8-BALL,Current Match,15,19,Lost On Hill,Won
+7/23/18,4,8-BALL,Current Match,1,17,Won,Loss
+7/23/18,4,8-BALL,Make Up Match,19,17,Won,Loss
+7/23/18,4,10-BALL,Make Up Match,1,11,Won,Loss
+7/23/18,4,8-BALL,Current Match,25,22,Won,Loss
+7/23/18,4,8-BALL,Current Match,19,6,Won,Loss
+7/25/18,1,8-BALL,Current Match,16,13,Won,Loss
+8/15/18,1,8-BALL,Future Match,20,23,Won,Loss
+8/8/18,1,10-BALL,Future Match,4,19,Won,Loss
+7/25/18,1,8-BALL,Current Match,13,18,Loss,Won
+7/30/18,4,9-BALL,Current Match,6,19,Won,Loss
+7/30/18,4,9-BALL,Current Match,1,7,Won,Loss
+7/30/18,4,9-BALL,Current Match,22,1,Won,Loss
+7/30/18,4,9-BALL,Current Match,8,19,Won,Loss
+7/30/18,4,8-BALL,Make Up Match,8,19,Won,Loss
+8/1/18,1,9-BALL,Current Match,21,23,Won,Loss
+8/1/18,1,9-BALL,Current Match,20,10,Won,Loss
+8/1/18,1,9-BALL,Current Match,4,24,Won,Loss
+7/11/18,1,9-BALL,Make Up Match,20,10,Won,Loss
+8/1/18,1,9-BALL,Current Match,13,14,Won,Lost On Hill
+8/1/18,1,9-BALL,Current Match,18,3,Won,Loss
+8/8/18,1,8-BALL,Future Match,18,4,Won,Lost On Hill
+7/25/18,1,10-BALL,Make Up Match,14,24,Won,Lost On Hill
+7/18/18,1,10-BALL,Make Up Match,14,18,Won,Loss
+8/6/18,4,10-BALL,Current Match,25,9,Won,Loss
+8/6/18,4,10-BALL,Current Match,15,22,Won,Loss
+8/6/18,4,8-BALL,Make Up Match,15,17,Won,Loss
+8/8/18,1,10-BALL,Current Match,14,16,Won,Loss
+8/8/18,1,10-BALL,Current Match,21,13,Won,Loss
+8/10/18,4,10-BALL,Make Up Match,8,6,Won,Loss
+8/13/18,4,8-BALL,Current Match,17,22,Won,Loss
+8/6/18,4,10-BALL,Make Up Match,17,19,Won,Loss
+8/13/18,4,8-BALL,Current Match,2,19,Loss,Won
+8/15/18,1,8-BALL,Current Match,14,21,Won,Loss
+8/15/18,1,8-BALL,Current Match,13,3,Won,Loss
+8/15/18,1,10-BALL,Make Up Match,23,3,Won,Lost On Hill
+8/15/18,1,8-BALL,Current Match,24,16,Won,Loss
+8/15/18,1,10-BALL,Make Up Match,24,5,Won,Loss
+8/20/18,4,9-BALL,Current Match,8,25,Won,Loss
+8/20/18,4,9-BALL,Current Match,15,19,Won,Loss
+8/20/18,4,9-BALL,Current Match,11,17,Won,Loss
+8/20/18,4,9-BALL,Current Match,1,6,Won,Loss
+8/20/18,4,8-BALL,Make Up Match,19,8,Won,Lost On Hill
+8/20/18,4,9-BALL,Current Match,22,12,Won,Loss
+8/13/18,4,8-BALL,Make Up Match,6,25,Won,Loss
+8/20/18,4,8-BALL,Make Up Match,11,15,Won,Loss
+8/22/18,1,10-BALL,Make Up Match,23,10,Won,Loss
+8/22/18,1,9-BALL,Current Match,21,16,Won,Loss
+8/22/18,1,9-BALL,Current Match,4,23,Won,Loss
+8/22/18,1,9-BALL,Current Match,20,13,Won,Lost On Hill
+8/22/18,1,8-BALL,Future Match,10,18,Won,Lost On Hill
+8/22/18,1,9-BALL,Current Match,14,3,Won,Loss
+8/22/18,1,9-BALL,Current Match,18,5,Won,Loss
+8/27/18,4,8-BALL,Make Up Match,12,19,Won,Loss
+8/27/18,4,9-BALL,Make Up Match,12,17,Won,Loss
+8/27/18,4,10-BALL,Make Up Match,12,26,Won,Lost On Hill
+8/27/18,4,9-BALL,Make Up Match,12,19,Loss,Won
+8/20/18,4,10-BALL,Current Match,15,6,Won,Loss
+8/27/18,4,10-BALL,Current Match,22,11,Won,Loss
+8/27/18,4,10-BALL,Current Match,25,12,Won,Loss
+7/30/18,4,9-BALL,Make Up Match,25,11,Won,Loss
+8/27/18,4,9-BALL,Make Up Match,25,22,Won,Loss
+8/6/18,4,10-BALL,Make Up Match,11,19,Won,Loss
+8/29/18,1,10-BALL,Current Match,5,23,Won,Lost On Hill
+8/29/18,1,10-BALL,Current Match,20,4,Won,Lost On Hill
+8/29/18,1,10-BALL,Current Match,10,16,Won,Loss
+8/29/18,1,10-BALL,Current Match,21,3,Won,Lost On Hill
+8/29/18,4,10-BALL,Make Up Match,1,8,Won,Loss
+9/3/18,4,8-BALL,Current Match,15,8,Won,Loss
+9/3/18,4,8-BALL,Current Match,26,22,Won,Loss
+9/3/18,4,8-BALL,Current Match,11,19,Won,Loss
+9/3/18,4,8-BALL,Current Match,25,1,Won,Loss
+9/3/18,4,8-BALL,Current Match,12,19,Won,Loss
+9/3/18,4,9-BALL,Make Up Match,12,19,Loss,Won
+9/3/18,4,10-BALL,Make Up Match,12,19,Won,Loss
+8/29/18,1,10-BALL,Make Up Match,14,13,Won,Loss
+9/5/18,1,8-BALL,Current Match,24,23,Won,Loss
+9/5/18,1,10-BALL,Make Up Match,24,21,Won,Loss
+9/5/18,1,8-BALL,Current Match,14,4,Won,Loss
+8/29/18,1,8-BALL,Current Match,5,13,Won,Loss
+9/5/18,1,8-BALL,Current Match,20,21,Won,Loss
+9/6/18,1,8-BALL,Make Up Match,24,18,Won,Loss
+9/3/18,4,8-BALL,Make Up Match,6,17,Won,Loss

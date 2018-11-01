@@ -1,2 +1,52 @@
-<h1>Locations#show</h1>
-<p>Find me in app/views/locations/show.html.erb</p>
+<div class="container">
+  <h1>Location Schedule</h1>
+
+  <div class="col-sm-4">
+    <%# <div class="card"> %>
+      <div class="card-body">
+        <h5 class="card-title">Location Details</h5>
+          <strong>Name:</strong> <%= @location.name %> <br>
+          <strong>Address:</strong> <%= @location.address %> <br>
+          <strong>Phone:</strong> <%= @location.phone %> <br>
+          <strong>Match Day:</strong> <%= @location.match_day %> <br><br>
+          <%= link_to "Back", :back, class: "btn btn-outline-secondary" %>
+          <%= link_to "Edit", edit_location_path(@location), class: "btn btn-outline-warning" %>
+          <%= link_to "Delete", location_path(@location), method: :delete, class: "btn btn-outline-danger" %>
+      </div>
+    <%# </div> %>
+  </div>
+
+  <table style="width:100%" class="table table-hover">
+    <tr>
+      <th>Match Date</th>
+      <th>Location</th>
+      <th>Format</th>
+      <th>Match Type</th>
+      <th>Player 1</th>
+      <th>Player 2</th>
+      <th>P1 Result</th>
+      <th>P2 Result</th>
+      <th>View</th>
+      <th>Edit</th>
+      <th>Details</th>
+    </tr>
+    <tr>
+      <% @matches.each do |match| %>
+        <%# <%= render partial: 'user', locals: { user: user } %>
+      <%# <div class="row" > %>
+          <td> <%= match.match_date %> </td>
+          <td> <%= match.location.name %> </td>
+          <td> <%= match.match_format %> </td>
+          <td> <%= match.match_type %> </td>
+          <td> <%= Profile.find(match.player1).full_name %> </td>
+          <td> <%= Profile.find(match.player2).full_name %> </td>
+          <td> <%= match.p1_result%> </td>
+          <td> <%= match.p2_result%> </td>
+          <td> <%= link_to "View", match_path(match), class: "btn btn-outline-primary" %> </td>
+          <td> <%= link_to "Edit", edit_match_path(match), class: "btn btn-outline-warning" %> </td>
+          <td> <%= link_to "Delete", match_path(match), method: :delete, class: "btn btn-outline-danger" %> </td>
+        <%# </div> %>
+    </tr>
+  <% end %>
+  </table>
+</div>

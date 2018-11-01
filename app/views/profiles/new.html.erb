@@ -1,2 +1,19 @@
 <h1>Profiles#new</h1>
 <p>Find me in app/views/profiles/new.html.erb</p>
+
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body form-group">
+        <%= bootstrap_form_with(model: @profile) do |form| %>
+          <%= form.text_field :first_name, label: "First Name:" %>
+          <%= form.text_field :last_name, label: "Last Name:" %>
+          <%= form.text_field :phone, label: "Phone:" %>
+          <%= form.select :handicap, ['M2', 'M3', 'M4', 'M5', 'M6', 'M7', 'M8', 'M9', 'GM4'], include_blank: true, label: "Handicap:" %>
+          <%= form.hidden_field :user_id %>
+          <%= form.select :location_id, Location.all.collect { |l| [ l.name, l.id ] }, include_blank: true, label: "Location:" %>
+          <%= link_to "Back", :back, class: "btn btn-outline-secondary" %>
+          <%= form.submit class: "btn btn-outline-success", value: "Save"%>
+        <% end %>
+      </div>
+    </div>
+  </div>

@@ -14,7 +14,9 @@ Rails.application.routes.draw do
   # get 'matches/update'
   # get 'matches/edit'
   # get 'matches/destroy'
-  resources :matches
+  resources :matches do
+    collection { post :import }
+  end
   # get 'locations/index'
   # get 'locations/show'
   # get 'locations/new'
@@ -35,5 +37,6 @@ Rails.application.routes.draw do
   root 'main#index'
 
   devise_for :users
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
