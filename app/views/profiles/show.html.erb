@@ -21,9 +21,10 @@
           <strong>Handicap:</strong> <%= @profile.handicap %> <br>
           <strong>Location:</strong> <%= @profile.location.name %> <br><br>
           <%= link_to "Back", :back, class: "btn btn-sm btn-outline-secondary" %>
-          <%# <%= link_to "Edit", edit_profile_path(@profile), class: "btn btn-outline-warning" %> 
-          <%# <%= link_to "Delete", profile_path(@profile), method: :delete, class: "btn btn-outline-danger" %> 
-        <%# <a href="#" class="btn btn-primary">Go somewhere</a> %>
+      <% if current_user && current_user.admin %>
+          <%= link_to "Edit", edit_profile_path(@profile), class: "btn btn-sm btn-outline-warning" %>
+          <%= link_to "Delete", profile_path(@profile), method: :delete, class: "btn btn-sm btn-outline-danger" %>
+      <% end %>
       </div>
     <%# </div> %>
   </div>
@@ -55,8 +56,10 @@
       <th>P1 Result</th>
       <th>P2 Result</th>
       <th>View</th>
-      <%# <th>Edit</th>
-      <th>Details</th> %>
+      <% if current_user && current_user.admin %>
+        <th>Edit</th>
+        <th>Details</th>
+      <% end %>
     </tr>
     <tr>
       <% @matches.each do |match| %>
@@ -71,9 +74,10 @@
           <td> <%= match.p1_result%> </td>
           <td> <%= match.p2_result%> </td>
           <td> <%= link_to "View", match_path(match), class: "btn btn-sm btn-outline-primary" %> </td>
-          <%# <td> <%= link_to "Edit", edit_match_path(match), class: "btn btn-outline-warning" %> </td>
-          <%# <td> <%= link_to "Delete", match_path(match), method: :delete, class: "btn btn-outline-danger" %> </td>
-        <%# </div> %>
+          <% if current_user && current_user.admin %>
+            <td> <%= link_to "Edit", edit_match_path(match), class: "btn btn-outline-warning" %> </td>
+            <td> <%= link_to "Delete", match_path(match), method: :delete, class: "btn btn-outline-danger"%> </td>
+          <% end %>
     </tr>
   <% end %>
   </table>

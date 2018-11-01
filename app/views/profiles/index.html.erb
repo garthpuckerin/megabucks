@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>Player List</h1>
+  <h1>Players</h1>
 
   <table style="width:100%" class="table table-sm table-hover">
     <tr>
@@ -8,8 +8,10 @@
       <th>Handicap</th>
       <th>Location</th>
       <th>View</th>
-      <%# <th>Edit</th>
-      <th>Details</th> %>
+      <% if current_user && current_user.admin %>
+        <th>Edit</th>
+        <th>Details</th>
+      <% end %>
     </tr>
     <tr>
       <% @profiles.each do |profile| %>
@@ -20,9 +22,10 @@
           <td> <%= profile.handicap %> </td>
           <td> <%= profile.location.name %> </td>
           <td> <%= link_to "View", profile_path(profile), class: "btn btn-sm btn-outline-primary" %> </td>
-          <%# <td> <%= link_to "Edit", edit_profile_path(profile), class: "btn btn-outline-warning" %> </td>
-          <%# <td> <%= link_to "Delete", profile_path(profile), method: :delete, class: "btn btn-outline-danger" %> </td>
-        <%# </div> %>
+          <% if current_user && current_user.admin %>
+          <td> <%= link_to "Edit", edit_profile_path(profile), class: "btn btn-outline-warning" %></td>
+          <td> <%= link_to "Delete", profile_path(profile), method: :delete, class: "btn btn-outline-danger" %></td>
+          <% end %>
     </tr>
   <% end %>
   </table>

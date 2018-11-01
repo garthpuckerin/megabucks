@@ -39,7 +39,7 @@ User.create(email: 'robert@goplaymega.com',	password: 'goplaymega', password_con
 User.create(email: 'rona@goplaymega.com',	password: 'goplaymega', password_confirmation: 'goplaymega')
 User.create(email: 'steve@goplaymega.com',	password: 'goplaymega', password_confirmation: 'goplaymega')
 User.create(email: 'venessa@goplaymega.com', password: 'goplaymega', password_confirmation: 'goplaymega')
-User.create(email: 'vincent@goplaymega.com',	password: 'goplaymega', password_confirmation: 'goplaymega')
+User.create(email: 'vincent@goplaymega.com',	password: 'goplaymega', password_confirmation: 'goplaymega', admin: true)
 Profile.create(first_name: 'Alex', last_name:	'Kent', phone: '', handicap: 'M8', user_id: 1, location_id:	1)
 Profile.create(first_name: 'Alex', last_name:	'Ross', phone: '', handicap: 'M8', user_id: 2, location_id:	1)
 Profile.create(first_name: 'Amanda', last_name:	'Andries', phone: '', handicap: 'M5', user_id: 3, location_id:	4)

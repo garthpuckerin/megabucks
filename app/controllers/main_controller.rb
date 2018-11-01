@@ -1,5 +1,8 @@
 class MainController < ApplicationController
   def index
+    # if user_signed_in?
+    #   redirect_to profile_path(profile)
+    # end
   end
 
   def show
