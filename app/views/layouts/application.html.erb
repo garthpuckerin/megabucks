@@ -17,7 +17,7 @@
 <header>
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a class="navbar-brand" href="/main">Megabucks Amateur Pool League</a>
+        <a class="navbar-brand nav-link" href="/main">Megabucks Amateur Pool League</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,7 +27,7 @@
               <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/profiles">Profile</a>
+              <a class="nav-link" href="/profiles">Profiles</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/locations">Locations</a>
@@ -36,20 +36,26 @@
               <a class="nav-link" href="/matches">Matches</a>
             </li> 
           </ul>
-          <ul class="navbar-nav navbar-right">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Welcome, Garth <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Logout</a>
-            </li>
-          </ul>
-        </div>
+       <% if current_user %>
+      <%# <li class="nav-item active"> %>
+       <a class="nav-link" href="/profiles">Welcome, <%= current_user.email %> <span class="sr-only">(current)</span></a>
+      <%# </li> %>
+      <%# <li class="nav-item"> %>
+      <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+      <%# </li> %>
+       <% else %>
+       <%# <li class="nav-item"> %>
+        <%= link_to "Sign In", new_user_session_path %>
+        <%# </li> %>
+        <%# <li class="nav-item"> %>
+        <%= link_to "Sign Up", new_user_registration_path, class: "nav-link" %>
+        <%# </li> %>
+      <% end %>
         
       </nav>
     </header>
 
-    <main id="header">
+    <%# <main id="header">
       <div class="container">
         <div class="row">
           <div class="col-md-10">
@@ -69,13 +75,15 @@
           </div>
         </div>
       </div>
-    </main>
+    </main> %>
+
     <% if notice %>
       <p class="alert alert-success"><%= notice %></p>
     <% end %>
     <% if alert %>
       <p class="alert alert-danger"><%= alert %></p>
     <% end %>
+    <br>
 
     <%= yield %>
   

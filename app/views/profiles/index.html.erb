@@ -1,15 +1,15 @@
 <div class="container">
-  <h1>Player Profiles</h1>
+  <h1>Player List</h1>
 
-  <table style="width:100%" class="table table-hover">
+  <table style="width:100%" class="table table-sm table-hover">
     <tr>
       <th>Name</th>
       <th>Phone</th>
       <th>Handicap</th>
       <th>Location</th>
       <th>View</th>
-      <th>Edit</th>
-      <th>Details</th>
+      <%# <th>Edit</th>
+      <th>Details</th> %>
     </tr>
     <tr>
       <% @profiles.each do |profile| %>
@@ -19,9 +19,9 @@
           <td> <%= profile.phone %> </td>
           <td> <%= profile.handicap %> </td>
           <td> <%= profile.location.name %> </td>
-          <td> <%= link_to "View", profile_path(profile), class: "btn btn-outline-primary" %> </td>
-          <td> <%= link_to "Edit", edit_profile_path(profile), class: "btn btn-outline-warning" %> </td>
-          <td> <%= link_to "Delete", profile_path(profile), method: :delete, class: "btn btn-outline-danger" %> </td>
+          <td> <%= link_to "View", profile_path(profile), class: "btn btn-sm btn-outline-primary" %> </td>
+          <%# <td> <%= link_to "Edit", edit_profile_path(profile), class: "btn btn-outline-warning" %> </td>
+          <%# <td> <%= link_to "Delete", profile_path(profile), method: :delete, class: "btn btn-outline-danger" %> </td>
         <%# </div> %>
     </tr>
   <% end %>

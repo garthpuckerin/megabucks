@@ -1,43 +1,42 @@
-<h1>Matches#index</h1>
-<p>Find me in app/views/matches/index.html.erb</p>
+<div class="container">
+  <h1>Matches</h1>
 
-<%= form_tag import_matches_path, multipart: true do %>
-  <%= file_field_tag :file %>
-  <%= submit_tag "Import Matches" %>
-<% end %>
+  <%# <%= form_tag import_matches_path, multipart: true do %> 
+    <%# <%= file_field_tag :file %> 
+    <%# <%= submit_tag "Import Matches" %> 
+  <%# <% end %> 
 
-<br><br>
-
-<table style="width:100%">
-  <tr>
-    <th>Match Date</th>
-    <th>Location</th>
-    <th>Format</th>
-    <th>Match Type</th>
-    <th>Player 1</th>
-    <th>Player 2</th>
-    <th>P1 Result</th>
-    <th>P2 Result</th>
-    <th>View</th>
-    <th>Edit</th>
-    <th>Details</th>
-  </tr>
-  <tr>
-    <% @matches.each do |match| %>
-      <%# <%= render partial: 'user', locals: { user: user } %>
-    <%# <div class="row" > %>
-         <td> <%= match.match_date %> </td>
-         <td> <%= match.location.name %> </td>
-         <td> <%= match.match_format %> </td>
-         <td> <%= match.match_type %> </td>
-         <td> <%= Profile.find(match.player1).full_name %> </td>
-         <td> <%= Profile.find(match.player2).full_name %> </td>
-         <td> <%= match.p1_result%> </td>
-         <td> <%= match.p2_result%> </td>
-         <td> <%= link_to "View", match_path(match), class: "btn btn-outline-primary" %> </td>
-         <td> <%= link_to "Edit", edit_match_path(match), class: "btn btn-outline-warning" %> </td>
-         <td> <%= link_to "Delete", match_path(match), method: :delete, class: "btn btn-outline-danger" %> </td>
-      <%# </div> %>
-  </tr>
-<% end %>
-</table>
+  <table style="width:100%" class="table table-sm table-hover">
+    <tr>
+      <th>Match Date</th>
+      <th>Location</th>
+      <th>Format</th>
+      <th>Match Type</th>
+      <th>Player 1</th>
+      <th>Player 2</th>
+      <th>P1 Result</th>
+      <th>P2 Result</th>
+      <th>View</th>
+      <%# <th>Edit</th>
+      <th>Details</th> %>
+    </tr>
+    <tr>
+      <% @matches.each do |match| %>
+        <%# <%= render partial: 'user', locals: { user: user } %>
+      <%# <div class="row" > %>
+          <td> <%= match.match_date %> </td>
+          <td> <%= match.location.name %> </td>
+          <td> <%= match.match_format %> </td>
+          <td> <%= match.match_type %> </td>
+          <td> <%= Profile.find(match.player1).full_name %> </td>
+          <td> <%= Profile.find(match.player2).full_name %> </td>
+          <td> <%= match.p1_result%> </td>
+          <td> <%= match.p2_result%> </td>
+          <td> <%= link_to "View", match_path(match), class: "btn btn-sm btn-outline-primary" %> </td>
+          <%# <td> <%= link_to "Edit", edit_match_path(match), class: "btn btn-outline-warning" %> </td>
+          <%# <td> <%= link_to "Delete", match_path(match), method: :delete, class: "btn btn-outline-danger" %> </td>
+        <%# </div> %>
+    </tr>
+  <% end %>
+  </table>
+</div>
