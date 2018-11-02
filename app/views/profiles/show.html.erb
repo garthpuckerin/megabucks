@@ -4,11 +4,7 @@
 
 <div class="row">
   <div class="card col-sm-4" >
-<%# <i class="fas fa-user-alt" size: 7x></i> %>
     <div class="card-body">
-      <%# <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a> %>
     </div>
   </div>
   <div class="col-sm-4">
@@ -63,8 +59,7 @@
     </tr>
     <tr>
       <% @matches.each do |match| %>
-        <%# <%= render partial: 'user', locals: { user: user } %>
-      <%# <div class="row" > %>
+        <%# <%= render partial: 'user', locals: { user: user } Leaving this here to help dry up my code later! %>
           <td> <%= match.match_date %> </td>
           <td> <%= match.location.name %> </td>
           <td> <%= match.match_format %> </td>
