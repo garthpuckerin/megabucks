@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   # get 'matches/destroy'
   resources :matches do
     collection { post :import }
-  end
+  end 
   # get 'locations/index'
   # get 'locations/show'
   # get 'locations/new'
